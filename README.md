@@ -2,10 +2,11 @@
 
 Hey! Your task is implement simple parser for raydium swaps. Here are instructions:
 1. Fork this repo
-2. Use `json` block encoding (you shouldn't change `rpc_utils.py`)
-3. In `raydium_parser.py` implement parser for block that will parse all raydium transactions to `RaydiumSwap` format
-4. Implement basic tests in `test_raydium_parser.py`
-5. After you finish go back to @PawelRainer
+2. Read README (especially *Usage* section) ;)
+3. Use `json` block encoding (you shouldn't change `rpc_utils.py`)
+4. In `raydium_parser.py` implement parser for block that will parse all raydium transactions to `RaydiumSwap` format
+5. Implement basic tests in `test_raydium_parser.py`
+6. After you finish go back to @PawelRainer
 
 Good luck!
 

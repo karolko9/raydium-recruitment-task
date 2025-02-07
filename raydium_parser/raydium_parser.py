@@ -1,5 +1,6 @@
+from collections.abc import Iterator
 from dataclasses import dataclass
-from typing import Literal, Iterator
+from typing import Literal
 
 from solders.transaction_status import UiConfirmedBlock
 
@@ -26,7 +27,7 @@ class RaydiumSwap:
     post_pool_balance_mint_out: int
 
 
-def parse_block(block: UiConfirmedBlock, slot: int) -> Iterator[RaydiumSwap]:
+def parse_block(block: UiConfirmedBlock, slot: int) -> Iterator[RaydiumSwap]:  # noqa: ARG001
     # TODO implement parsing logic here
 
     for _ in range(10):

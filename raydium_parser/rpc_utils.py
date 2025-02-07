@@ -11,7 +11,7 @@ def get_block(slot: int) -> UiConfirmedBlock:
     cache_file = os.path.join(CACHE_DIR, f"{slot}.json")
 
     if os.path.exists(cache_file):
-        with open(cache_file, "r") as f:
+        with open(cache_file) as f:
             return UiConfirmedBlock.from_json(f.read())
 
     rpc = Client(RPC_URL)
@@ -22,8 +22,8 @@ def get_block(slot: int) -> UiConfirmedBlock:
             f.write(block_data.to_json())
 
         return block_data
-    else:
-        raise ValueError(f"Block {slot} not found")
+
+    raise ValueError(f"Block {slot} not found")
 
 
 if __name__ == "__main__":

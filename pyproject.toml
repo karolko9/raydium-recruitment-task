@@ -90,6 +90,9 @@ extend-select = [
     "TCH",   # type checking
 ]
 ignore = [
+    "D103",
+    "D100",
+    "D101",
     "C901",  # too complex
     "S608",  # insecure
     "D401",  # imperative mood
