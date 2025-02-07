@@ -25,6 +25,7 @@ A minimal, conservative Python project template configured with:
 
 - **Install dependencies**: `make sync`
 - **Run linting**: `make lint`
+- **Run linting + auto fix**: `make fix`
 - **Run type checks**: `make typecheck`
 - **Run tests**: `make test`
 - **View additional commands**: `make help`
