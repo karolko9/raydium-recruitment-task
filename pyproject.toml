@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "template"
+name = "raydium_parser"
 version = "0.1.0"
-description = "A template Python repo with Pyright, Ruff, Wily"
+description = "raydium recruitment task"
 authors = ["Stefan Batalka <stefan@ranvier.co.uk>"]
 license = "MIT"
 readme = "README.md"
@@ -23,14 +23,15 @@ pytest = "^8.3.4"
 pytest-asyncio = "^0.25.3"
 pytest-watch = "^4.2.0"
 loguru = "^0.7.3"
+solana = "^0.36.3"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.6.10"
 diff-cover = "^9.2.2"
 
 [tool.pyright]
-include = ["template"]
-pythonPath = "template"
+include = ["raydium_parser"]
+pythonPath = "raydium_parser"
 exclude = ["**/node_modules", "**/__pycache__", ".venv", ".git", "dist", "build", "_*", "**/tests", "**/gen", "**/*.ipynb", "**/wip*.py"]
 defineConstant = { DEBUG = true }
 typeCheckingMode = "standard"

@@ -1,4 +1,15 @@
-# Template Python Repository
+# Recruitment task
+
+Hey! Your task is implement simple parser for raydium swaps. Here are instructions:
+1. Fork this repo
+2. Use `json` block encoding (you shouldn't change `rpc_utils.py`)
+3. In `raydium_parser.py` implement parser for block that will parse all raydium transactions to `RaydiumSwap` format
+4. Implement basic tests in `test_raydium_parser.py`
+5. After you finish go back to @PawelRainer
+
+Good luck!
+
+# About 
 
 A minimal, conservative Python project template configured with:
 - **Poetry** for dependency management
@@ -11,8 +22,7 @@ A minimal, conservative Python project template configured with:
 
 ## Usage
 
-- **Replace** all occurrences of "`template`" (e.g., in `pyproject.toml` and the top-level `template` directory) with your project name.
-- **Install dependencies**: `poetry install`
+- **Install dependencies**: `make sync`
 - **Run linting**: `make lint`
 - **Run type checks**: `make typecheck`
 - **Run tests**: `make test`
